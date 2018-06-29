@@ -22,16 +22,16 @@ baseurl:               /UWP-Develop-Tutorial
 lang:                  zh-cn
 
 # The title of your blog. Used in the sidebar and the browser tab.
-title:                 UWP开发系列教程
+title:                 UWP 平台开发系列教程
 
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  将从XAML和C#两个方向带领大家从入门到出家（秃头）
+  从 XAML 和 C# 两个方向带领大家从入门到出家（秃头）
   
 # A shorter description for the sidebar.
 tagline:               >
-  将从XAML和C#两个方向带领大家从入门到出家（秃头）
+  从 XAML 和 C# 两个方向带领大家从入门到出家（秃头）
 
 # A list of keywords for your blog
 keywords:              []
@@ -223,10 +223,10 @@ plugins:
 
 # Used on index and about sites
 # social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+name:                TotoroQ
+links:
+      
+      - https://github.com/totoroyyb
 
 
 # Other Plugins
