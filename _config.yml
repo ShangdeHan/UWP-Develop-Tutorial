@@ -100,10 +100,6 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 # Hydejack Settings
 # ----------------------------------------------------------------------------------------
 # These settings are specific to Hydejack.
-titles_from_headings:
-  enabled:     false
-  strip_title: false
-
 hydejack:
   # Configure the order of complementary content on blog posts
   post_addons:         [about, newsletter, related]
@@ -145,6 +141,7 @@ hydejack:
   # When using Google Analytics, set to `true` to display a cookie notice banner.
   # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      false
+
 
 
 # Collections
@@ -245,7 +242,8 @@ relative_links:
   collections:         true
 
 titles_from_headings:
-  strip_title:         true
+  enabled:             false
+  strip_title:         false
   collections:         true
 
 kramdown:
