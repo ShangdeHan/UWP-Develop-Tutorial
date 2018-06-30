@@ -34,7 +34,7 @@ tagline:               >
   从 XAML 和 C# 两个方向带领大家从入门到出家（秃头）
 
 # A list of keywords for your blog
-keywords:              [UWP,tutorial,development]
+keywords:              [UWP, tutorial, development]
 
 # Used by jekyll-seo-tag...
 logo:                  /assets/icons/icon.png
