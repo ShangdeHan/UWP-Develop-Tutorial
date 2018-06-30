@@ -7,7 +7,7 @@ description: >
 
   本教程网站采用了 [hydejack](https://github.com/qwtel/hydejack) 主题，由 [qwtel](https://github.com/qwtel) 基于 hyde 主题开发而成，简洁而美观。
 menu: true
-order: 4
+order: 3
 ---
 
 
