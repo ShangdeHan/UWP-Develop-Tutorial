@@ -191,6 +191,7 @@ plugins:
   # - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jemoji
   # - jekyll-titles-from-headings
 
 # Theme
@@ -263,7 +264,7 @@ sass:
 
 titles_from_headings:
   enabled:     true
-  # strip_title: true
+  strip_title: true
 
 # If you are upgrading form v5 (or earlier), uncomment the lines below,
 # so that the location of the feed XML stays the same.
