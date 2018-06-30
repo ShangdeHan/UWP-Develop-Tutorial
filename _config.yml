@@ -34,7 +34,7 @@ tagline:               >
   从 XAML 和 C# 两个方向带领大家从入门到出家（秃头）
 
 # A list of keywords for your blog
-keywords:              []
+keywords:              [UWP,tutorial,development]
 
 # Used by jekyll-seo-tag...
 logo:                  /assets/icons/icon.png
@@ -101,8 +101,8 @@ font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
 # ----------------------------------------------------------------------------------------
 # These settings are specific to Hydejack.
 titles_from_headings:
-  enabled:     true
-  strip_title: true
+  enabled:     false
+  strip_title: false
 
 hydejack:
   # Configure the order of complementary content on blog posts
