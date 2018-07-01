@@ -10,30 +10,30 @@
 
 # Free version
 # ---------------------------------------------------------------------------------------
-home:                  Home
-pages:                 Pages
-posts:                 Posts
-about:                 About
-related_posts:         Related Posts
-other_projects:        Other Projects
-comments:              Comments
-jump_to:               Jump to
-navigation:            Navigation
-social:                Social
-links:                 Links
+home:                  主页
+pages:                 页面
+posts:                 博文
+about:                 关于
+related_posts:         相关博文
+other_projects:        其他项目
+comments:              评论
+jump_to:               跳转至
+navigation:            导航
+social:                社交
+links:                 链接
 pagination:            Pagination
 newer:                 Newer
 older:                 Older
-back:                  Back
+back:                  返回
 permalink:             Permalink
 permalink_icon:        icon-link
 templates:             Templates (for web app)
 
-loading:               Loading…
-redirecting:           Redirecting…
+loading:               加载中…
+redirecting:           重定向中…
 
 continue_reading:      >
-  Continue reading <!--post_title-->
+  继续阅读 <!--post_title-->
 
 cookies_banner:
   text:                >
