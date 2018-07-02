@@ -125,5 +125,5 @@ comments: true
 
 
 
-[img1]: https://rawgit.com/totoroyyb/UWP-Develop-Tutorial/master/pic/others/vs-shortcut/1.jpg
+[img1]: https://rawgit.com/totoroyyb/UWP-Develop-Tutorial/master/pic/others/vs-shortcut/1.jpg	"理想与现实的差距"
 
