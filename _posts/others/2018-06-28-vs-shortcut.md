@@ -3,6 +3,8 @@ layout: post
 title: Visual Studio 常用快捷键
 description: >
   介绍一些 Visual Studio 在进行 UWP 开发中，或是其他平台开发中的一些使用快捷键！
+categories: [others]
+comments: true
 ---
 
 其实我在开发过程中快捷键用的并不算是多的，部分快捷键我也可能不了解，欢迎大佬补充
@@ -124,3 +126,4 @@ description: >
 
 
 [img1]: https://rawgit.com/totoroyyb/UWP-Develop-Tutorial/master/pic/others/vs-shortcut/1.jpg
+
