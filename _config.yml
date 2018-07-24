@@ -19,7 +19,7 @@ baseurl:               /UWP-Develop-Tutorial
 
 # Language of your content in 2-letter code, e.g.: en, de.
 # You may also provide a location, e.g.: en-us, de_AT.
-lang:                  zh-cn
+lang:                  cn
 
 # The title of your blog. Used in the sidebar and the browser tab.
 title:                 UWP 平台开发系列教程
@@ -59,7 +59,7 @@ copyright:             © TotoroQ 2018. All rights reserved.
 #     href:              /cookies-policy/
 
 # Format of the permalinks
-permalink:             pretty
+permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              5
@@ -71,17 +71,51 @@ paginate_path:         /page-:num/
 
 # Sidebar image and theme color of the site.
 accent_image:          /assets/img/sidebar-bg.jpg
-accent_color:          '#4fb1ba'
+accent_color:          rgb(79,177,186)
+
+# This is used for the `theme-color` meta tag,
+# which changes the background color of the browser UI in certain browsers.
+# Defaults to `accent_color`.
+theme_color:           rgb(25,55,71)
 
 # The string encoding which fonts to fetch from Google Fonts.
-# See: <https://qwtel.com/hydejack/docs/configuration/>
-google_fonts:          Roboto+Slab:700|Noto+Sans:400,400i,700,700i
+# See: <https://hydejack.com/docs/configuration/>
+google_fonts:          Roboto+Slab:400|Noto+Sans:400,400i,700,700i
 
 # The text font. Expects a string that is a valid CSS font-family value.
+# To change font-weight, see _sass/variables.scss
 font:                  Noto Sans, Helvetica, Arial, sans-serif
 
 # The font used for headings. Expects a string that is a valid CSS font-family value.
+# To change font-weight, see _sass/variables.scss
 font_heading:          Roboto Slab, Helvetica, Arial, sans-serif
+
+defaults:
+  - scope:
+      path:            hyde
+    values:
+      accent_color:    rgb(38,139,210)
+      accent_image:
+        background:    rgb(32,32,32)
+        overlay:       false
+
+  # `jekyll-seo-tag` will mark collection outputs as `BlogPosting`,
+  # but we want them to be `WebPage`s:
+  - scope:
+      type:            projects
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_categories
+    values:
+      seo:
+        type:          WebPage
+  - scope:
+      type:            featured_tags
+    values:
+      seo:
+        type:          WebPage
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
@@ -142,18 +176,25 @@ hydejack:
   # When enabled, no user-related data will be stored until the user gives consent.
   cookies_banner:      false
 
-
+# ⚡️ DANGER ZONE ⚡️
+  # ----------------
+  # This is an _experimental_ feature.
+  # Only use if you know what Service Workers are and how they can impact your site!
+  # Coding skills highly recommended.
+  offline:
+    enabled:           true
+    cache_version:     1
 
 # Collections
 # ========================================================================================
 
 collections:
   featured_categories:
-    permalink:         /category/:name/
+    permalink:         /:name/
     output:            true
 
   featured_tags:
-    permalink:         /tag/:name/
+    permalink:         /tag-:name/
     output:            true
 
   projects:
@@ -171,6 +212,8 @@ exclude:
   - node_modules
   - package.json
   - package-lock.json
+  - webpack.config.js
+  - "*.gemspec"
 include:
   - LICENSE.md
 
@@ -179,20 +222,17 @@ include:
 # ========================================================================================
 
 plugins:
-  # - jekyll-avatar
-  # - jekyll-default-layout
+  - jekyll-default-layout
   - jekyll-feed
-  # - jekyll-gist
-  # - jekyll-optional-front-matter
+  - jekyll-optional-front-matter
   - jekyll-paginate
-  # - jekyll-readme-index
-  # - jekyll-redirect-from
+  - jekyll-readme-index
+  - jekyll-redirect-from
   - jekyll-relative-links
-  # - jekyll-remote-theme
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-titles-from-headings
   - jemoji
-  # - jekyll-titles-from-headings
 
 # Theme
 # ---------------------------------------------------------------------------------------
@@ -237,6 +277,7 @@ optional_front_matter:
 
 readme_index:
   remove_originals:    true
+  with_frontmatter:    true
 
 relative_links:
   collections:         true
@@ -262,8 +303,3 @@ compress_html:
 
 sass:
   style:               compressed
-
-# If you are upgrading form v5 (or earlier), uncomment the lines below,
-# so that the location of the feed XML stays the same.
-# feed:
-#   path:                atom.xml
