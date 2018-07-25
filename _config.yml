@@ -37,7 +37,7 @@ tagline:               >
 keywords:              [UWP, tutorial, development]
 
 # Used by jekyll-seo-tag...
-logo:                  /assets/icons/icon.png
+logo:                  /assets/icons/MSIcon.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 # Duplication is necessary due to the `jekyll-feed`, `jekyll-seo-tag` plugin.
@@ -232,7 +232,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-titles-from-headings
-  # - jemoji
+  - jemoji
 
 # Theme
 # ---------------------------------------------------------------------------------------
